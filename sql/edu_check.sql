@@ -248,10 +248,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password_hash`, `role`, `teacher_id`, `class_id`, `active`, `created_at`) VALUES
-(1, 'admin', '$2y$10$JA0pPArdPlVg/O8FGnJJrOxtEOirV887IOKMkPvR6mMvxUA1xmLLS', 'admin', NULL, NULL, 1, '2026-05-10 15:25:20'),
-(2, 'm101', '$2y$10$UI/0kEQsixaImgSjB7bGJOhQ/j5ht707fFJk76j5hY0kFqPlLwL/.', 'teacher', 1, 1, 1, '2026-06-14 11:32:18'),
-(3, 'm201', '$2y$10$UI/0kEQsixaImgSjB7bGJOhQ/j5ht707fFJk76j5hY0kFqPlLwL/.', 'teacher', 2, 2, 1, '2026-06-14 11:32:18'),
-(4, 'm301', '$2y$10$UI/0kEQsixaImgSjB7bGJOhQ/j5ht707fFJk76j5hY0kFqPlLwL/.', 'teacher', 3, 3, 1, '2026-06-14 11:32:18');
+(1, 'admin', '$2y$10$U6JVcdhVniMlc3a068Mz1OfTsJOVXmPI7oZrVOUJ9QJa1bpZtTA0C', 'admin', NULL, NULL, 1, '2026-05-10 15:25:20'),
+(2, 'm101', '$2y$10$RUi3UW56.xbbZZsCDTWVzunZVJsqURQXOfCFxRbbhMayzRZBTnCj6', 'teacher', 1, 1, 1, '2026-06-14 11:32:18'),
+(3, 'm201', '$2y$10$RUi3UW56.xbbZZsCDTWVzunZVJsqURQXOfCFxRbbhMayzRZBTnCj6', 'teacher', 2, 2, 1, '2026-06-14 11:32:18'),
+(4, 'm301', '$2y$10$RUi3UW56.xbbZZsCDTWVzunZVJsqURQXOfCFxRbbhMayzRZBTnCj6', 'teacher', 3, 3, 1, '2026-06-14 11:32:18');
 
 --
 -- Indexes for dumped tables

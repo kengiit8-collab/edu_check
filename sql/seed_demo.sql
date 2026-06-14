@@ -17,7 +17,7 @@ TRUNCATE TABLE subjects;
 DELETE FROM users WHERE role = 'teacher';
 ALTER TABLE users AUTO_INCREMENT = 2;
 UPDATE users
-SET password_hash = '$2y$10$JA0pPArdPlVg/O8FGnJJrOxtEOirV887IOKMkPvR6mMvxUA1xmLLS',
+SET password_hash = '$2y$10$U6JVcdhVniMlc3a068Mz1OfTsJOVXmPI7oZrVOUJ9QJa1bpZtTA0C',
     role = 'admin',
     teacher_id = NULL,
     class_id = NULL,
@@ -40,9 +40,9 @@ INSERT INTO class_homeroom_teachers (class_id, teacher_id, sort_order) VALUES
 (3, 3, 1);
 
 INSERT INTO users (username, password_hash, role, teacher_id, class_id, active) VALUES
-('m101', '$2y$10$UI/0kEQsixaImgSjB7bGJOhQ/j5ht707fFJk76j5hY0kFqPlLwL/.', 'teacher', 1, 1, 1),
-('m201', '$2y$10$UI/0kEQsixaImgSjB7bGJOhQ/j5ht707fFJk76j5hY0kFqPlLwL/.', 'teacher', 2, 2, 1),
-('m301', '$2y$10$UI/0kEQsixaImgSjB7bGJOhQ/j5ht707fFJk76j5hY0kFqPlLwL/.', 'teacher', 3, 3, 1);
+('m101', '$2y$10$RUi3UW56.xbbZZsCDTWVzunZVJsqURQXOfCFxRbbhMayzRZBTnCj6', 'teacher', 1, 1, 1),
+('m201', '$2y$10$RUi3UW56.xbbZZsCDTWVzunZVJsqURQXOfCFxRbbhMayzRZBTnCj6', 'teacher', 2, 2, 1),
+('m301', '$2y$10$RUi3UW56.xbbZZsCDTWVzunZVJsqURQXOfCFxRbbhMayzRZBTnCj6', 'teacher', 3, 3, 1);
 
 INSERT INTO students (student_no, student_code, prefix_th, first_name_th, last_name_th, class_id, active) VALUES
 (1, 'D101001', 'เด็กชาย', 'กิตติ', 'ทดลอง', 1, 1),
